@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	<head>
+		<title>Intranet Comapany </title>
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="container">
+						
+					<!-- Logo -->
+						<h1><a href="#" id="logo">FAQ</a></h1>
+					
+					<!-- Nav -->
+						<nav id="nav"></nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<section>
+						<header class="major">
+							<h2>Wi-Fi</h2>
+							<span class="byline">Jak połączyć się do sieci Wi-Fi w biurze?</span>
+						</header>
+						<p> W celu szybszego dostępu do sieci na urządzeniach mobilnych w kilku miejscach można odnaleść przygotwane przez nas kody QR oraz karty NFC dzięki którym można podłaczyć sie bezproblemowo do sieci WiFi. Karty NFC są dostępne dla gości w sekretarciacie oraz dużej i małej sali konferencyjnej.
+							Aby sieć została dodana należy w telefonie uruchomić NFC ,a następnie przylożyć kartę do telefonu. Wtedy zostanie wyświetlony monit o dodanie nowej sieci. 
+							W przypadku gdy na urządzeniu mobilnym nie posiadamy NFC lub standard kary Milfare nie jest obsługiwany przez telefon należy postępować zgodnie z instrukacjami poniżej.
+						<p onclick="showHideFunction(1)">&#8594 Andoroid 10 lub inny telefon z aplikacją QR Scaner</p>
+						<div id="selectedDiv1" class="hidden">
+								1. W przypadku Android 10 należy wejść w ustawienia, Wi-Fi, a następnie dodać nową sieć skanować poniższy kod QR. DOkłądna instrukcja pod linkeim:  <a href="https://www.neowin.net/news/android-10-how-to-easily-share-wi-fi-networks-using-qr-code/">	Podłączenie Wi-Fi kodem QR w Android 10</a>.
+								<br/>2. Jeśli używamy telefonu z innym systemem niż Android 10. Należy pobrać dowolną aplikację do odczytu kodów QR. A następnie za jej pomocą odczytać kod.
+								<br/><ul>
+									<li><img src="images/android10QR.jpeg" alt="android10"></li>
+								</ul>
+						</div>
+												<p onclick="showHideFunction(2)">&#8594 Komputery i inne systemy</p>
+						<div id="selectedDiv2" class="hidden">
+								1. W telefonie należy zeskanowoać poniższy kod QR i wejsć na link odsyłąjący, tam znajduje się hasło do sieci Wi-Fi.   
+								<br/><ul>
+									<li><img src="images/wifiPassword.png" alt="WiFiPassowrd"></li>
+								</ul>
+								<br/>2.	Jeśli nie mamy zainstalwoanej aplikcaji do kodów QR, do danych do logowania można dostać sie poprzez adres:  <a href="https://drive.google.com/file/d/1UjalU5dPkscq5cK2GhoQkGzdMzt3DrNr/view?usp=sharing"> dane do Wi-Fi</a>
+						</div>						
+					</section>
+				</div>
+			</div>
+
+		<div id="footer"></div>
+</body>
+<script>
+function showHideFunction(i) {
+  var x = document.getElementById("selectedDiv" + i);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){ 
+  $("#nav").load("nav.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
